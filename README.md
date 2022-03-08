@@ -23,6 +23,23 @@ tbd
 
 ## Changelog
 
+### 2022.03.07
+
+#### New software
+
+- Microsoft PowerToys
+- OBS Studio
+- WinSCP (incomplete)
+
+#### Fixed
+
+- Sizer: Now appropriately names package.
+- Nextcloud Desktop Client: Now appropriately names package. Avoids silent install so system doesn't reboot without warning.
+
+#### Other changes
+
+- Obsidian: Latest version is now retrieved from the GitHub API.
+
 ### 2021.09.20
 
 #### Spotify
@@ -42,6 +59,4 @@ The following packages now install silently:
 
 #### Known Issues
 
-- Sizer's executable is labeled "not a valid application"
-- Nextcloud does not download the appropriate file
-
+- WinSCP fails to download package (HTTP Error 200).
