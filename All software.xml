@@ -1,11 +1,203 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="2d2fa65b-1f5a-4748-885d-c1c89053fbd1">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>1533613</LastFileSize>
+    <LastFileDate>2022-03-08T16:44:32.0358319</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>{file}</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables>
+      <item>
+        <key>
+          <string>uuid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.uuidgenerator.net/api/version4</Url>
+            <Name>uuid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.7-zip.org/download.html</Url>
+            <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
+  &lt;TR&gt;
+    &lt;TH class="Title" align="center" width=60&gt;Link&lt;/TH&gt;
+    &lt;TH class="Title" align="center" width=60&gt;Type&lt;/TH&gt;
+    &lt;TH class="Title" align="left" width=160&gt;System&lt;/TH&gt;
+    &lt;TH class="Title" align="center"&gt;Description&lt;/TH&gt;
+  &lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD class="Item" align="center"&gt;&lt;A href="</StartText>
+            <EndText>"</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Office</Category>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{bddd9a9f-8d04-40f5-853f-aaf549d9123d}.exe</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2022-03-08T16:44:32.0358319</LastUpdated>
+    <TargetPath>cache\{{uuid}}.exe</TargetPath>
+    <FixedDownloadUrl>https://www.7-zip.org/{version}</FixedDownloadUrl>
+    <Name>7-zip</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="c3b7858b-5fc3-4235-926b-eb872523e20a">
+    <WebsiteUrl />
+    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0</UserAgent>
+    <UserNotes />
+    <LastFileSize>77647416</LastFileSize>
+    <LastFileDate>2022-03-08T16:40:44.9824589</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>{file}</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables>
+      <item>
+        <key>
+          <string>uuid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.uuidgenerator.net/api/version4</Url>
+            <Name>uuid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Multimedia</Category>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{f609c519-b47e-45ad-a10a-81381c4ba911}.exe</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2022-03-08T16:40:44.9824589</LastUpdated>
+    <TargetPath>cache\{{uuid}}.exe</TargetPath>
+    <FixedDownloadUrl>https://www.deezer.com/desktop/download?platform=win32&amp;architecture=x86</FixedDownloadUrl>
+    <Name>Deezer</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="732fc5f9-32cf-4990-b21a-e8cb62dc4dd3">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>125976928</LastFileSize>
+    <LastFileDate>2022-03-08T16:55:15.5998342</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>{file}</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables>
+      <item>
+        <key>
+          <string>uuid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.uuidgenerator.net/api/version4</Url>
+            <Name>uuid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Office</Category>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{78e866ab-4001-47b3-ba98-33ee3005379b}.exe</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2022-03-08T16:55:15.5998342</LastUpdated>
+    <TargetPath>cache\{{uuid}}.exe</TargetPath>
+    <FixedDownloadUrl>https://central.github.com/deployments/desktop/desktop/latest/win32</FixedDownloadUrl>
+    <Name>GitHub Desktop</Name>
+  </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="9e50d52b-39de-48e0-8666-dfd4b0ddb895">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>10471352</LastFileSize>
-    <LastFileDate>2019-12-20T22:59:24-08:00</LastFileDate>
+    <LastFileSize>10917043</LastFileSize>
+    <LastFileDate>2022-03-08T16:29:31.3621632</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -82,21 +274,93 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Utilities</Category>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Testbench\Desktop\Ketarin-1.8.11\cache\{3ad29fb4-c653-4dfe-94f7-90644e3ffaec}.exe</PreviousLocation>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{9f65eec6-67e4-475f-ab88-aaabb4eb277d}.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-09-20T06:38:08.669499-07:00</LastUpdated>
+    <LastUpdated>2022-03-08T16:29:31.3621632</LastUpdated>
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
     <FixedDownloadUrl>{download}</FixedDownloadUrl>
     <Name>HexChat</Name>
   </ApplicationJob>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b7e692c8-a551-42b3-b63c-bf864a7b4d34">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="53eac9a3-1dc5-4b8c-924e-f6da0962d195">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>88862720</LastFileSize>
-    <LastFileDate>2021-09-17T07:37:53.2202221</LastFileDate>
+    <LastFileSize>62637840</LastFileSize>
+    <LastFileDate>2022-03-07T22:12:37.7173025</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>{file}</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables>
+      <item>
+        <key>
+          <string>uuid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.uuidgenerator.net/api/version4</Url>
+            <Name>uuid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://api.github.com/repos/microsoft/PowerToys/tags</Url>
+            <StartText>[{"name":"v</StartText>
+            <EndText>"</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Utilities</Category>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{0614ef96-b961-456b-9a49-d037a41c0229}.exe</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2022-03-07T22:12:37.7173025</LastUpdated>
+    <TargetPath>cache\{{uuid}}.exe</TargetPath>
+    <FixedDownloadUrl>https://github.com/microsoft/PowerToys/releases/download/v0.56.2/PowerToysSetup-{version}-x64.exe</FixedDownloadUrl>
+    <Name>Microsoft PowerToys</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="77ca374f-c8a9-4d84-9738-547cb5fca316">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>100667392</LastFileSize>
+    <LastFileDate>2022-03-07T22:15:05.5201532</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -154,21 +418,21 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Utilities</Category>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\jpear\Downloads\Ketarin-1.8.11\cache\{ca6a4b4f-ac38-4b49-aa6b-cccb42e49967}.exe</PreviousLocation>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{21619699-d330-4f6f-99a2-df88be931b31}.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-09-17T07:37:53.2202221</LastUpdated>
-    <TargetPath>cache\{{uuid}}.exe</TargetPath>
-    <FixedDownloadUrl>https://github.com/nextcloud/desktop/releases/download/v{version}/Nextcloud-{version}-x64.msi</FixedDownloadUrl>
-    <Name>Nextcloud</Name>
+    <LastUpdated>2022-03-07T22:15:05.5201532</LastUpdated>
+    <TargetPath>cache\{{uuid}}.msi</TargetPath>
+    <FixedDownloadUrl>https://github.com/nextcloud/desktop/releases/download/v3.4.3/Nextcloud-{version}-x64.msi</FixedDownloadUrl>
+    <Name>Nextcloud Desktop Client</Name>
   </ApplicationJob>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0f288ac4-86ed-4145-8c1a-3d227a1c5574">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="94025b94-956e-43ab-8c7f-8e1a7df98c8a">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>68878936</LastFileSize>
-    <LastFileDate>2021-09-02T10:49:23-07:00</LastFileDate>
+    <LastFileSize>117910112</LastFileSize>
+    <LastFileDate>2022-03-07T22:10:12.489288</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -212,11 +476,81 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>https://obsidian.md</Url>
-            <StartText>Get Obsidian for &lt;span class="download-os"&gt;Windows&lt;/span&gt;
-						&lt;br&gt;
-						&lt;span class="u-muted u-small"&gt;Version </StartText>
-            <EndText>&lt;/span&gt;</EndText>
+            <Url>https://api.github.com/repos/obsproject/obs-studio/tags</Url>
+            <StartText>[{"name":"</StartText>
+            <EndText>"</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Multimedia</Category>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{fcbdb874-35c8-49f9-a654-2a57df1fd332}.exe</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2022-03-07T22:10:12.489288</LastUpdated>
+    <TargetPath>cache\{{uuid}}.exe</TargetPath>
+    <FixedDownloadUrl>https://github.com/obsproject/obs-studio/releases/download/27.2.3/OBS-Studio-{version}-Full-Installer-x64.exe</FixedDownloadUrl>
+    <Name>OBS Studio</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0f288ac4-86ed-4145-8c1a-3d227a1c5574">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>72996560</LastFileSize>
+    <LastFileDate>2022-03-08T16:29:35.3610929</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>{file}</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables>
+      <item>
+        <key>
+          <string>uuid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.uuidgenerator.net/api/version4</Url>
+            <Name>uuid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://api.github.com/repos/obsidianmd/obsidian-releases/tags</Url>
+            <StartText>[{"name":"v</StartText>
+            <EndText>"</EndText>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -228,11 +562,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Office</Category>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Testbench\Desktop\Ketarin-1.8.11\cache\{293ad248-9c7f-4a3d-a4a7-31cbd901251d}.exe</PreviousLocation>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{bb017a1f-0848-4985-a103-842de1a48367}.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-09-20T06:38:17.4976599-07:00</LastUpdated>
+    <LastUpdated>2022-03-08T16:29:35.3610929</LastUpdated>
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
     <FixedDownloadUrl>https://github.com/obsidianmd/obsidian-releases/releases/download/v{version}/Obsidian.{version}.exe</FixedDownloadUrl>
     <Name>Obsidian</Name>
@@ -241,8 +575,8 @@
     <WebsiteUrl>https://getsharex.com/</WebsiteUrl>
     <UserAgent />
     <UserNotes>Screen capture, file sharing and productivity tool.</UserNotes>
-    <LastFileSize>8316109</LastFileSize>
-    <LastFileDate>2021-09-09T20:14:57-07:00</LastFileDate>
+    <LastFileSize>7417058</LastFileSize>
+    <LastFileDate>2022-03-07T19:00:49.0521669</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -305,11 +639,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Testbench\Desktop\Ketarin-1.8.11\cache\{f5be4fad-98e5-4ff2-95f2-d8458f06fccd}.exe</PreviousLocation>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{40e38265-fd4a-4ddb-8f67-f13933359d48}.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-09-20T06:38:15.9041805-07:00</LastUpdated>
+    <LastUpdated>2022-03-07T19:00:49.0521669</LastUpdated>
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
     <FixedDownloadUrl>https://github.com/ShareX/ShareX/releases/download/v{version}/ShareX-{version}-setup.exe</FixedDownloadUrl>
     <Name>ShareX</Name>
@@ -319,7 +653,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>335872</LastFileSize>
-    <LastFileDate>2020-04-16T10:48:09-07:00</LastFileDate>
+    <LastFileDate>2022-03-07T21:41:42.4483257</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -377,12 +711,12 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Utilities</Category>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Testbench\Desktop\Ketarin-1.8.11\cache\{ec522f5e-486d-4a2f-bbf1-9d2d724d745f}.exe</PreviousLocation>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{8e614136-fb3e-44bd-8c7a-a19f570f881c}.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-09-20T06:38:17.9979489-07:00</LastUpdated>
-    <TargetPath>cache\{{uuid}}.exe</TargetPath>
+    <LastUpdated>2022-03-07T21:41:42.4483257</LastUpdated>
+    <TargetPath>cache\{{uuid}}.msi</TargetPath>
     <FixedDownloadUrl>http://www.brianapps.net/sizer4/{download}</FixedDownloadUrl>
     <Name>Sizer</Name>
   </ApplicationJob>
@@ -390,8 +724,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>75917128</LastFileSize>
-    <LastFileDate>2021-09-03T01:15:10-07:00</LastFileDate>
+    <LastFileSize>75447288</LastFileSize>
+    <LastFileDate>2022-03-07T19:00:57.881328</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -433,11 +767,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Multimedia</Category>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Testbench\Desktop\Ketarin-1.8.11\cache\{64fc1c73-19ba-4e63-8d74-fcd301708a6d}.exe</PreviousLocation>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{c8a05c8e-347a-4462-9f09-6bba5b654db7}.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-09-20T06:54:33.9094092-07:00</LastUpdated>
+    <LastUpdated>2022-03-07T19:00:57.881328</LastUpdated>
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
     <FixedDownloadUrl>http://download.spotify.com/SpotifyFullSetup.exe</FixedDownloadUrl>
     <Name>Spotify</Name>
@@ -447,7 +781,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>1770744</LastFileSize>
-    <LastFileDate>2021-02-04T15:33:46-08:00</LastFileDate>
+    <LastFileDate>2022-03-07T19:00:52.5969384</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -506,11 +840,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Games</Category>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Testbench\Desktop\Ketarin-1.8.11\cache\{8311625c-c27e-4cef-901f-28cdce8013a1}.exe</PreviousLocation>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{46ae92fa-a4ae-41e1-b0a2-2291f266768a}.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-09-20T06:38:22.0756387-07:00</LastUpdated>
+    <LastUpdated>2022-03-07T19:00:52.5969384</LastUpdated>
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
     <FixedDownloadUrl>{download}</FixedDownloadUrl>
     <Name>Steam</Name>
@@ -519,8 +853,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>34408296</LastFileSize>
-    <LastFileDate>2021-09-19T10:23:25-07:00</LastFileDate>
+    <LastFileSize>35090144</LastFileSize>
+    <LastFileDate>2022-03-07T19:00:57.2468331</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -562,11 +896,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Social</Category>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Testbench\Desktop\Ketarin-1.8.11\cache\{9314835c-4d5d-48da-a6c8-727f595fba31}.exe</PreviousLocation>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{aac042ee-d9a4-4597-a557-027272f8caf4}.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-09-20T06:38:46.4652475-07:00</LastUpdated>
+    <LastUpdated>2022-03-07T19:00:57.2468331</LastUpdated>
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
     <FixedDownloadUrl>https://telegram.org/dl/desktop/win64</FixedDownloadUrl>
     <Name>Telegram</Name>
@@ -575,8 +909,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>79590824</LastFileSize>
-    <LastFileDate>2021-09-10T10:48:16-07:00</LastFileDate>
+    <LastFileSize>75726608</LastFileSize>
+    <LastFileDate>2022-03-08T16:29:40.8042634</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -618,11 +952,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Utilities</Category>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Testbench\Desktop\Ketarin-1.8.11\cache\{1c427a9c-6ca5-4a0f-9589-1ecf0b4d55cc}.exe</PreviousLocation>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{e8c42599-f18c-4856-9978-db766e91e92f}.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-09-20T06:38:46.7003684-07:00</LastUpdated>
+    <LastUpdated>2022-03-08T16:29:40.8042634</LastUpdated>
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
     <FixedDownloadUrl>https://code.visualstudio.com/sha/download?build=stable&amp;os=win32-x64</FixedDownloadUrl>
     <Name>Visual Studio Code</Name>
@@ -631,8 +965,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>79604624</LastFileSize>
-    <LastFileDate>2021-09-15T01:09:09-07:00</LastFileDate>
+    <LastFileSize>81660808</LastFileSize>
+    <LastFileDate>2022-03-07T19:01:05.8708802</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -690,13 +1024,90 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Internet</Category>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Testbench\Desktop\Ketarin-1.8.11\cache\{b000c372-0949-49fe-8688-07b79b3119b6}.exe</PreviousLocation>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{ecd69138-8e97-4e9b-b6ef-8b18398e4aa5}.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-09-20T06:38:54.8804555-07:00</LastUpdated>
+    <LastUpdated>2022-03-07T19:01:05.8708802</LastUpdated>
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
     <FixedDownloadUrl>{website}</FixedDownloadUrl>
     <Name>Vivaldi</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="5b8c1b31-c8a8-4fe5-ae7e-7d14bd5fee91">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>50244992</LastFileSize>
+    <LastFileDate>2022-03-08T16:51:24.3722403</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>{file}</FileName>
+        <Parameters />
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables>
+      <item>
+        <key>
+          <string>uuid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.uuidgenerator.net/api/version4</Url>
+            <Name>uuid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://git-scm.com/download/win</Url>
+            <StartText>  &lt;h4&gt;Standalone Installer&lt;/h4&gt;
+  &lt;p&gt;
+  &lt;strong&gt;&lt;a href="https://github.com/git-for-windows/git/releases/download/v2.35.1.windows.2/Git-2.35.1.2-32-bit.exe"&gt;32-bit Git for Windows Setup&lt;/a&gt;.&lt;/strong&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+  &lt;strong&gt;&lt;a href="</StartText>
+            <EndText>"&gt;64-bit Git for Windows Setup</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Office</Category>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>S:\G3 Drivers\Ketarin\cache\{87fadda2-c867-4e92-9099-e0f49d6dd2ac}.exe</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2022-03-08T16:51:24.3722403</LastUpdated>
+    <TargetPath>cache\{{uuid}}.exe</TargetPath>
+    <FixedDownloadUrl>{version}</FixedDownloadUrl>
+    <Name>git</Name>
   </ApplicationJob>
 </Jobs>
