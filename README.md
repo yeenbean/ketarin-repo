@@ -18,12 +18,16 @@ tbd
 
 ### 2022.03.08
 
-#### Mew software
+#### New software
 
 - GitHub Desktop
 - git
 - 7-zip
 - Deezer
+
+#### Other changes
+
+- Removed WinSCP (not fixing - please use Ninite)
 
 ### 2022.03.07
 
@@ -58,7 +62,3 @@ The following packages now install silently:
 - Steam
 - Telegram
 - Vivaldi
-
-#### Known Issues
-
-- WinSCP fails to download package (HTTP Error 200).
