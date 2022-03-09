@@ -14,14 +14,16 @@ A collection of software I install on all systems, installable with [Ketarin](ht
 
 tbd
 
-## Planned software additions
-
-- [ ] 7-zip or PeaZip
-- [ ] git
-- [ ] GitAhead or another git client
-- [ ] Plexamp
-
 ## Changelog
+
+### 2022.03.08
+
+#### Mew software
+
+- GitHub Desktop
+- git
+- 7-zip
+- Deezer
 
 ### 2022.03.07
 
