@@ -16,6 +16,22 @@ tbd
 
 ## Changelog
 
+### 2022.03.09
+
+#### New software
+
+- 1Password
+- Discord
+- Parsec
+
+#### Repository QoL
+
+Created a script, `tidy.ps1`, that will clean up the exported XML from Ketarin. When executed, it does the following:
+
+- Removes previous download location for all entries.
+- Removes last updated times from all entries.
+- Removes last file date for all entries.
+
 ### 2022.03.08
 
 #### New software
