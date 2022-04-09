@@ -1,5 +1,7 @@
 # ketarin-repo
 
+[![GitHub issues](https://img.shields.io/github/issues/yeenbean/ketarin-repo?style=for-the-badge)](https://github.com/yeenbean/ketarin-repo/issues) [![GitHub stars](https://img.shields.io/github/stars/yeenbean/ketarin-repo?style=for-the-badge)](https://github.com/yeenbean/ketarin-repo/stargazers)
+
 A collection of software I install on all systems, installable with [Ketarin](https://ketarin.org).
 
 ## How to use
