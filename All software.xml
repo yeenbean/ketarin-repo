@@ -4,7 +4,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>106523784</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -57,7 +56,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>1533613</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -134,7 +132,6 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0</UserAgent>
     <UserNotes />
-    <LastFileSize>77647416</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -187,7 +184,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>82992808</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -236,11 +232,78 @@
     <FixedDownloadUrl>https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&amp;platform=win&amp;arch=x86</FixedDownloadUrl>
     <Name>Discord</Name>
   </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="136f7752-57dd-4411-8f07-555383d1b957">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.121 Safari/537.36</HttpReferer>
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>{file}</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables>
+      <item>
+        <key>
+          <string>uuid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.uuidgenerator.net/api/version4</Url>
+            <Name>uuid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.gimp.org/downloads/</Url>
+            <StartText>The current stable release of GIMP is &lt;b&gt;</StartText>
+            <EndText>&lt;/b&gt;</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Multimedia</Category>
+    <SourceType>FixedUrl</SourceType>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <TargetPath>cache\{{uuid}}.exe</TargetPath>
+    <FixedDownloadUrl>https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-{version}-setup.exe</FixedDownloadUrl>
+    <Name>GIMP</Name>
+  </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="732fc5f9-32cf-4990-b21a-e8cb62dc4dd3">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>125976928</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -293,7 +356,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>10917043</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -381,7 +443,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>62637840</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -446,11 +507,62 @@
     <FixedDownloadUrl>https://github.com/microsoft/PowerToys/releases/download/v0.56.2/PowerToysSetup-{version}-x64.exe</FixedDownloadUrl>
     <Name>Microsoft PowerToys</Name>
   </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="07028db7-6eb6-4bc0-a077-41c9da68a499">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>{file}</FileName>
+        <Parameters>/passive</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables>
+      <item>
+        <key>
+          <string>uuid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.uuidgenerator.net/api/version4</Url>
+            <Name>uuid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Games</Category>
+    <SourceType>FixedUrl</SourceType>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <TargetPath>cache\{{uuid}}.msi</TargetPath>
+    <FixedDownloadUrl>https://launcher.mojang.com/download/MinecraftInstaller.msi</FixedDownloadUrl>
+    <Name>Minecraft Launcher</Name>
+  </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="77ca374f-c8a9-4d84-9738-547cb5fca316">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>100667392</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -519,7 +631,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>117910112</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -588,7 +699,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>72996560</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -657,7 +767,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>5962896</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -710,7 +819,6 @@
     <WebsiteUrl>https://getsharex.com/</WebsiteUrl>
     <UserAgent />
     <UserNotes>Screen capture, file sharing and productivity tool.</UserNotes>
-    <LastFileSize>7417058</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -784,7 +892,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>335872</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -853,7 +960,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>75447288</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -906,7 +1012,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>1770744</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -972,11 +1077,78 @@
     <FixedDownloadUrl>{download}</FixedDownloadUrl>
     <Name>Steam</Name>
   </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="70da5b61-b219-42f5-ba3e-2ed931c2fe37">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>{file}</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables>
+      <item>
+        <key>
+          <string>uuid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.uuidgenerator.net/api/version4</Url>
+            <Name>uuid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://api.github.com/repos/Syncplay/syncplay/releases/latest</Url>
+            <StartText>"tag_name":"v</StartText>
+            <EndText>"</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Utilities</Category>
+    <SourceType>FixedUrl</SourceType>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <TargetPath>cache\{{uuid}}.exe</TargetPath>
+    <FixedDownloadUrl>https://github.com/Syncplay/syncplay/releases/download/v{version}/Syncplay-{version}-Setup.exe</FixedDownloadUrl>
+    <Name>Syncplay</Name>
+  </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="a1210d01-9aa1-4b91-95fa-d006f41fc55f">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>35090144</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1029,7 +1201,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>75726608</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1082,7 +1253,6 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>81660808</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1147,11 +1317,79 @@
     <FixedDownloadUrl>{website}</FixedDownloadUrl>
     <Name>Vivaldi</Name>
   </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="136357ad-a24d-481a-a059-e2c3f325d383">
+    <WebsiteUrl />
+    <UserAgent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.121 Safari/537.36</UserAgent>
+    <UserNotes />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer>https://www.foobar2000.org/download</HttpReferer>
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>{file}</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables>
+      <item>
+        <key>
+          <string>uuid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.uuidgenerator.net/api/version4</Url>
+            <Name>uuid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>link</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.foobar2000.org/download</Url>
+            <StartText>&lt;h2&gt;Latest stable version&lt;/h2&gt;
+Download &lt;a href="</StartText>
+            <EndText>"</EndText>
+            <Name>link</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Multimedia</Category>
+    <SourceType>FixedUrl</SourceType>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <TargetPath>cache\{{uuid}}.exe</TargetPath>
+    <FixedDownloadUrl>https://www.foobar2000.org{link}</FixedDownloadUrl>
+    <Name>foobar2000</Name>
+  </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="5b8c1b31-c8a8-4fe5-ae7e-7d14bd5fee91">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>50244992</LastFileSize>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1220,5 +1458,73 @@
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
     <FixedDownloadUrl>{version}</FixedDownloadUrl>
     <Name>git</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="068bafdb-a45c-493e-b863-e833b1b4cc5f">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>{file}</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables>
+      <item>
+        <key>
+          <string>uuid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://www.uuidgenerator.net/api/version4</Url>
+            <Name>uuid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://api.github.com/repos/ugetdm/uget-windows-installer/tags</Url>
+            <StartText>[{"name":"v</StartText>
+            <EndText>"</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Utilities</Category>
+    <SourceType>FixedUrl</SourceType>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <TargetPath>cache\{{uuid}}.exe</TargetPath>
+    <FixedDownloadUrl>https://github.com/ugetdm/uget-windows-installer/releases/download/v{version}/uGet-{version}-win32.gtk3.exe</FixedDownloadUrl>
+    <Name>uGet Download Manager</Name>
   </ApplicationJob>
 </Jobs>

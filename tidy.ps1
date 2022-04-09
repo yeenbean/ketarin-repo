@@ -9,4 +9,7 @@ foreach($node in $nodes){$node.ParentNode.RemoveChild($node)}
 $nodes = $xml.SelectNodes("//LastFileDate")
 foreach($node in $nodes){$node.ParentNode.RemoveChild($node)}
 
+$nodes = $xml.SelectNodes("//LastFileSize")
+foreach($node in $nodes){$node.ParentNode.RemoveChild($node)}
+
 $xml.Save("All software.xml")

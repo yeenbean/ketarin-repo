@@ -16,6 +16,20 @@ tbd
 
 ## Changelog
 
+### 2022.04.09
+
+#### New software
+
+- GIMP
+- Minecraft Java Edition
+- foobar2000 (WIP)
+- Syncplay
+- uGet Download Manager
+
+#### Repository QoL
+
+- `tidy.ps1` now removes last known file sizes of downloads.
+
 ### 2022.03.09
 
 #### New software
