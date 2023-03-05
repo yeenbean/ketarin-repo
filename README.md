@@ -18,6 +18,17 @@ tbd
 
 ## Changelog
 
+### 2023.03.05
+
+#### Fixed
+
+- Foobar2000 finally works
+- Fixed the following URLs:
+  - Microsoft PowerToys
+  - OBS Studio
+  - HexChat
+  - NextCloud
+
 ### 2022.04.09
 
 #### New software

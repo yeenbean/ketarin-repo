@@ -400,7 +400,8 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>https://hexchat.github.io/downloads.html</Url>
-            <StartText>&lt;p&gt;Windows 7+ 64bit Installer&lt;/p&gt;
+            <StartText>  &lt;div class="card"&gt;
+    &lt;p&gt;Windows 64bit Installer&lt;/p&gt;
     &lt;a href="</StartText>
             <EndText>"</EndText>
             <Name>download</Name>
@@ -504,7 +505,7 @@
     <Enabled>true</Enabled>
     <FileHippoId />
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
-    <FixedDownloadUrl>https://github.com/microsoft/PowerToys/releases/download/v0.56.2/PowerToysSetup-{version}-x64.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>https://github.com/microsoft/PowerToys/releases/download/v{version}/PowerToysSetup-{version}-x64.exe</FixedDownloadUrl>
     <Name>Microsoft PowerToys</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="07028db7-6eb6-4bc0-a077-41c9da68a499">
@@ -624,7 +625,7 @@
     <Enabled>true</Enabled>
     <FileHippoId />
     <TargetPath>cache\{{uuid}}.msi</TargetPath>
-    <FixedDownloadUrl>https://github.com/nextcloud/desktop/releases/download/v3.4.3/Nextcloud-{version}-x64.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>https://github.com/nextcloud/desktop/releases/download/v{version}/Nextcloud-{version}-x64.msi</FixedDownloadUrl>
     <Name>Nextcloud Desktop Client</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="94025b94-956e-43ab-8c7f-8e1a7df98c8a">
@@ -692,7 +693,7 @@
     <Enabled>true</Enabled>
     <FileHippoId />
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
-    <FixedDownloadUrl>https://github.com/obsproject/obs-studio/releases/download/27.2.3/OBS-Studio-{version}-Full-Installer-x64.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>https://github.com/obsproject/obs-studio/releases/download/{version}/OBS-Studio-{version}-Full-Installer-x64.exe</FixedDownloadUrl>
     <Name>OBS Studio</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0f288ac4-86ed-4145-8c1a-3d227a1c5574">
@@ -1336,7 +1337,7 @@
       <SetupInstruction xsi:type="StartProcessInstruction">
         <EnvironmentVariables />
         <FileName>{file}</FileName>
-        <Parameters>/S</Parameters>
+        <Parameters />
         <WaitForExit>true</WaitForExit>
       </SetupInstruction>
     </SetupInstructions>
@@ -1366,7 +1367,7 @@
             <Regex />
             <Url>https://www.foobar2000.org/download</Url>
             <StartText>&lt;h2&gt;Latest stable version&lt;/h2&gt;
-Download &lt;a href="</StartText>
+Download &lt;a href="/getfile/</StartText>
             <EndText>"</EndText>
             <Name>link</Name>
           </UrlVariable>
@@ -1383,7 +1384,7 @@ Download &lt;a href="</StartText>
     <Enabled>true</Enabled>
     <FileHippoId />
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
-    <FixedDownloadUrl>https://www.foobar2000.org{link}</FixedDownloadUrl>
+    <FixedDownloadUrl>https://www.foobar2000.org/files/{link}</FixedDownloadUrl>
     <Name>foobar2000</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="5b8c1b31-c8a8-4fe5-ae7e-7d14bd5fee91">
@@ -1426,22 +1427,17 @@ Download &lt;a href="</StartText>
       </item>
       <item>
         <key>
-          <string>version</string>
+          <string>github</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
-            <Url>https://git-scm.com/download/win</Url>
-            <StartText>  &lt;h4&gt;Standalone Installer&lt;/h4&gt;
-  &lt;p&gt;
-  &lt;strong&gt;&lt;a href="https://github.com/git-for-windows/git/releases/download/v2.35.1.windows.2/Git-2.35.1.2-32-bit.exe"&gt;32-bit Git for Windows Setup&lt;/a&gt;.&lt;/strong&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-  &lt;strong&gt;&lt;a href="</StartText>
-            <EndText>"&gt;64-bit Git for Windows Setup</EndText>
-            <Name>version</Name>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;="browser_download_url":")https://github.com/git-for-windows/git/releases/download/([a-zA-Z0-9.]){2,32}/([a-zA-Z0-9.-]){2,32}-64-bit.exe(?="})</Regex>
+            <Url>https://api.github.com/repos/git-for-windows/git/releases/latest</Url>
+            <StartText>","name":"</StartText>
+            <EndText>-64-bit.exe",</EndText>
+            <Name>github</Name>
           </UrlVariable>
         </value>
       </item>
@@ -1456,7 +1452,7 @@ Download &lt;a href="</StartText>
     <Enabled>true</Enabled>
     <FileHippoId />
     <TargetPath>cache\{{uuid}}.exe</TargetPath>
-    <FixedDownloadUrl>{version}</FixedDownloadUrl>
+    <FixedDownloadUrl>{github}</FixedDownloadUrl>
     <Name>git</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="068bafdb-a45c-493e-b863-e833b1b4cc5f">
