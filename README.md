@@ -6,7 +6,7 @@ A collection of software I install on all systems, installable with [Ketarin](ht
 
 ## How to use
 
-1. [Download Ketarin](https://ketarin.org/download)
+1. [Download Ketarin](https://ketarin.org/downloads/Ketarin/downloadzip.php)
 2. Extract and open Ketarin
 3. Download the `All software.xml` file and drag it into Ketarin's window
 4. Click "Update all"
